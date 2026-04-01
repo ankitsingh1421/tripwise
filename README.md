@@ -93,7 +93,7 @@ npm install
 
 ### 2. Configure Environment Variables
 
-Edit `server/.env`:
+Edit `server/.env.example`:
 
 ```env
 PORT=5000
@@ -101,8 +101,10 @@ MONGODB_URI=mongodb://localhost:27017/tripwise
 JWT_SECRET=your_super_secret_key_here_change_this
 
 # Your API Keys
-GOOGLE_GEMINI_API_KEY=AIzaSyBCPQOneMn4ZBw2p6-qOnzUnFWEbBN4I_4
-GOOGLE_MAP_API_KEY=AIzaSyAOVYRIgupAurZup5y1PRh8Ismb1A3lLao
+GOOGLE_GEMINI_API_KEY="your_google_gemini_api_key_here"
+GEMINI_MODEL="gemini model_here"
+GEMINI_API_VERSION="gemini_api_version_here"
+GOOGLE_MAP_API_KEY="your_google_map_api_key_here"
 
 # Gmail for invite emails (use App Password)
 EMAIL_USER=your_gmail@gmail.com
@@ -266,4 +268,4 @@ Update `axios.defaults.baseURL` in `AuthContext.js` to your production backend U
 
 ---
 
-Built with ❤️ using MERN Stack + Google Gemini AI
+Built with ❤️ by Ankit Singh using MERN Stack + Google Gemini AI
